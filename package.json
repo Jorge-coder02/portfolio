@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.1",
+    "astro": "^5.4.1",
+    "autoprefixer": "^10.2.5",
+    "daisyui": "^1.7.0",
+    "framer-motion": "^12.4.10",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.2.19"
+  }
+}
