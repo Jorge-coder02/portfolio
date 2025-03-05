@@ -45,7 +45,7 @@ function getButton(tech: string) {
             <img
               width={18}
               height={18}
-              src="/public/express.png"
+              src="/images/express.png"
               alt="logo"
             ></img>
           }
