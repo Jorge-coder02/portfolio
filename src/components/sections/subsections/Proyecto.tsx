@@ -169,9 +169,9 @@ function Proyecto({
             }
             enlace={link_github}
           ></BotonLink>
-          {/* Github */}
+          {/* Preview */}
           <BotonLink
-            texto="Preview"
+            texto="Probar"
             svg={
               <svg
                 className="feather feather-external-link"
