@@ -138,7 +138,7 @@ function Proyecto({
       </div>
       {/* Texto */}
       <div className="flex-1 mt-2 gap-10">
-        <h3 className="text-2xl font-semibold" title="Dificultad">
+        <h3 className="text-2xl font-semibold mb-3 md:mb-0" title={titulo}>
           {titulo}
         </h3>
         {/*  Tecnologías (recorrer) */}
