@@ -71,7 +71,7 @@ function getButton(tech: string) {
     case "react":
       return (
         <Boton
-          bg_color="#222222"
+          bg_color="rgb(31 31 33)" // #222222 color react cambiado para contraste con darkMode
           texto="React"
           svg={
             <svg
@@ -138,7 +138,10 @@ function Proyecto({
       </div>
       {/* Texto */}
       <div className="flex-1 mt-2 gap-10">
-        <h3 className="text-2xl font-semibold mb-3 md:mb-0" title={titulo}>
+        <h3
+          className="text-2xl font-semibold mb-3 md:mb-0 dark:text-gray-300"
+          title={titulo}
+        >
           {titulo}
         </h3>
         {/*  Tecnologías (recorrer) */}
@@ -147,7 +150,7 @@ function Proyecto({
             <React.Fragment key={index}>{getButton(tech)}</React.Fragment>
           ))}
         </div>
-        <span className="mt-4 block text-gray-600 tracking-normal text-md">
+        <span className="mt-4 block dark:text-gray-200 tracking-normal text-md">
           {descripcion}
         </span>
         {/* Botones desarrollo */}
@@ -158,7 +161,7 @@ function Proyecto({
             svg={
               <svg
                 fill="currentColor"
-                className="feather feather-external-link"
+                className="feather feather-external-link text-black dark:text-black group-hover:text-white dark:group-hover:text-white"
                 height="24"
                 viewBox="0 0 24 24"
                 width="24"
@@ -177,7 +180,7 @@ function Proyecto({
             texto="Probar"
             svg={
               <svg
-                className="feather feather-external-link"
+                className="feather feather-external-link text-black dark:text-black group-hover:text-white dark:group-hover:text-white"
                 fill="none"
                 height="24"
                 stroke="currentColor"

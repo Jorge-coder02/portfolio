@@ -1,11 +1,11 @@
 ---
-
+import ThemeToggle from "../ui/ThemeToggle";
 ---
 
 <header id="header" class="p-5 font-semibold shadow-sm">
   <div class="container mx-auto flex justify-around items-center">
     <nav>
-      <ul class="flex gap-4 md:gap-8">
+      <ul class="flex justify-center items-center gap-4 md:gap-8">
         <li><a href="#about" class="hover:text-purple-500">Sobre mí</a></li>
         <li>
           <a href="#proyectos" class="hover:text-purple-500">Proyectos</a>
@@ -13,7 +13,11 @@
         <li>
           <a href="#tecnologias" class="hover:text-purple-500">Tecnologías</a>
         </li>
-        <li><a href="#contacto" class="hover:text-purple-500">Contacto</a></li>
+        <li>
+          <a href="#contacto" class="hover:text-purple-500"
+            ><ThemeToggle client:load /></a
+          >
+        </li>
       </ul>
     </nav>
   </div>

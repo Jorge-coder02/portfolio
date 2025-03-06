@@ -23,7 +23,8 @@ body {
   color: white; /* Color del texto seleccionado */
 }
 
-.bg-gradiente {
+/* Light Mode */
+.lightMode {
   background: linear-gradient(
     to bottom,
     #f9f1ea,
@@ -32,13 +33,32 @@ body {
   );
 }
 
+/* Dark Mode */
+.dark {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #2f2f2f, #222222 40%, #1a1a1a 100%);
+}
+.dark h2 {
+  color: #8650f3; /* Títulos */
+}
+.dark h1,
+.dark h3,
+.dark span,
+.dark p {
+  color: #ffffff;
+}
+
+.dark a {
+  color: #8650f3; /* Enlaces */
+}
+
 /* Animación de flotación */
 @keyframes floatEffect {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px); /* El movimiento hacia arriba */
+    transform: translateY(-5px); /* movimiento hacia arriba */
   }
   100% {
     transform: translateY(0);
@@ -49,5 +69,3 @@ body {
 .float-effect {
   animation: floatEffect 2.5s ease-in-out infinite;
 }
-
-/* Ajustes de la animación si quieres modificar la velocidad o la distancia */
