@@ -2,7 +2,10 @@
 import Proyecto from "../sections/subsections/Proyecto.tsx";
 ---
 
-<section class="py-16 mt-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
+<section
+  id="proyectos"
+  class="py-16 mt-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+>
   <!-- Título -->
   <h2 class="md:mb-16 text-3xl font-bold text-purple-600 text-center">
     &lt;/&gt;Proyectos
@@ -13,35 +16,35 @@ import Proyecto from "../sections/subsections/Proyecto.tsx";
     <!-- Proyecto 1 -->
     <Proyecto
       client:load
-      titulo="Tic Tac Toe - Juego de destreza"
-      botones_tech={["react", "tailwind"]}
-      img="/images/tictactoe.png"
-      descripcion={`Popular juego de Tic Tac Toe, creado para 2 jugadores en
-      local. Desarrollado desde cero con React y Tailwind CSS.`}
-      link_github="https://github.com/Jorge-coder02/tic-tac-toe"
-      link_preview="https://tictactoebyjorge.netlify.app/"
+      titulo="ShortUrl - Acortador de enlaces 🟡"
+      botones_tech={["react", "node", "express", "mongodb"]}
+      img="/images/shorturl.png"
+      descripcion={`Servicio web para generar URLs cortas y manejables, simplificando 
+    la difusión de contenido y facilitando su compartición.`}
+      link_github="https://github.com/Jorge-coder02/short-url-backend"
+      link_preview="https://short-url-frontend-khaki.vercel.app/"
     />
 
     <!-- Proyecto 2 -->
     <Proyecto
       client:load
-      titulo="ShortUrl - Acortador de enlaces web"
-      botones_tech={["react", "node", "express", "mongodb"]}
-      img="/images/shorturl.png"
-      descripcion={`Servicio web para generar URLs cortas y manejables, simplificando 
-      la difusión de contenido y facilitando su compartición.`}
-      link_github="https://github.com/Jorge-coder02/short-url-backend"
-      link_preview="https://short-url-frontend-khaki.vercel.app/"
+      titulo="Tic Tac Toe - Juego de destreza 🟢"
+      botones_tech={["react", "tailwind"]}
+      img="/images/tictactoe.png"
+      descripcion={`Popular juego de Tic Tac Toe, creado para 2 jugadores en
+    local. Desarrollado desde cero con React y Tailwind CSS.`}
+      link_github="https://github.com/Jorge-coder02/tic-tac-toe"
+      link_preview="https://tictactoebyjorge.netlify.app/"
     />
 
     <!-- Proyecto 3 -->
     <Proyecto
       client:load
-      titulo="Simon Says"
+      titulo="Simon Says - Juego de memoria 🟢"
       botones_tech={["react", "tailwind"]}
       img="/images/simondice.png"
-      descripcion={`Servicio web para generar URLs cortas y manejables, simplificando 
-      la difusión de contenido y facilitando su compartición.`}
+      descripcion={`"Juego clásico de memoria en el que debes repetir secuencias de colores y sonidos en el orden correcto. 
+      Con posibilidad de elegir la dificultad `}
       link_github="https://github.com/Jorge-coder02/simon-says"
       link_preview="https://simonsaysjorge.netlify.app"
     />

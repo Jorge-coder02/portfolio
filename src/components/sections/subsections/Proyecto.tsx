@@ -138,7 +138,9 @@ function Proyecto({
       </div>
       {/* Texto */}
       <div className="flex-1 mt-2 gap-10">
-        <h3 className="text-2xl font-semibold">{titulo}</h3>
+        <h3 className="text-2xl font-semibold" title="Dificultad">
+          {titulo}
+        </h3>
         {/*  Tecnologías (recorrer) */}
         <div className="flex gap-x-1 items-center mt-2">
           {botones_tech.map((tech, index) => (

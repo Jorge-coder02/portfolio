@@ -31,3 +31,23 @@ body {
     rgb(251, 247, 247) 60%
   );
 }
+
+/* Animación de flotación */
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* El movimiento hacia arriba */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animación flotar: botón Trabajar */
+.float-effect {
+  animation: floatEffect 2.5s ease-in-out infinite;
+}
+
+/* Ajustes de la animación si quieres modificar la velocidad o la distancia */

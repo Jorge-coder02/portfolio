@@ -2,10 +2,13 @@
 import RotatingText from "../ui/RotatingText";
 ---
 
-<main class="container mx-auto p-4">
+<main
+  id="about"
+  class="flex flex-col justify-center items-center container mx-auto p-4 mt-16 h-[100vh]"
+>
   <!-- Introducción -->
   <section
-    class="flex flex-col justify-center items-center md:text-center my-8 md:my-16"
+    class="flex flex-col justify-center items-center md:text-center my-8 md:mt-16"
   >
     <h1 class="text-5xl w-md font-bold text-center text-black-600">
       Hola, soy
@@ -31,11 +34,22 @@ import RotatingText from "../ui/RotatingText";
       > y el diseño responsive.
     </p>
   </section>
+  <section>
+    <!-- Botón Contacto -->
+    <button
+      id="boton_trabajo"
+      class="btn border-none cursor-default bg-green-500
+      hover:bg-green-500
+      float-effect"
+      >Disponible para trabajar
+    </button>
+  </section>
 
   <!-- Botones -->
   <section
     class="flex gap-4 justify-center items-center mx-auto text-center mt-8 border-red-800"
   >
+    <!-- Botón Contacto -->
     <a
       target="_blank"
       href="mailto:jorgitenis@hotmail.es?subject=Estás%20contratado%20😉"
@@ -56,6 +70,7 @@ import RotatingText from "../ui/RotatingText";
         Contacto
       </button></a
     >
+    <!-- Botón LinkedIn -->
     <a
       target="_blank"
       href="https://www.linkedin.com/in/jorge-p%C3%A9rez-aceituno-554833248/"
@@ -96,7 +111,38 @@ import RotatingText from "../ui/RotatingText";
       </button></a
     >
   </section>
-
-  <!-- <section class="text-center mt-8">
-    </section> -->
 </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let boton_trabajo = document.getElementById("boton_trabajo");
+    let estado = "disponible"; // Línea a cambiar según situación laboral
+
+    // Cambiar clases al botón según estado === Disponible / Trabajando
+    if (boton_trabajo) {
+      if (estado === "trabajando") {
+        boton_trabajo.classList.remove(
+          "bg-green-500",
+          "hover:bg-green-500",
+          "float-effect"
+        );
+        boton_trabajo.classList.add("bg-yellow-500", "hover:bg-yellow-500");
+        boton_trabajo.classList.add("bg-red-500", "hover:bg-red-500");
+        boton_trabajo.innerText = "Actualmente trabajando";
+      }
+
+      // Evento para cambiar el texto al hacer clic
+      boton_trabajo.addEventListener("click", () => {
+        if (
+          boton_trabajo.innerText.toLowerCase() === "disponible para trabajar"
+        ) {
+          boton_trabajo.innerText = "Contratado 😉";
+        } else if (
+          boton_trabajo.innerText.split(" ")[0].toLowerCase() === "contratado"
+        ) {
+          boton_trabajo.innerText = "Disponible para trabajar";
+        }
+      });
+    }
+  });
+</script>
