@@ -15,24 +15,24 @@ const ThemeToggle = () => {
 
     // Aplica la clase `dark` al elemento <html> si es necesario
     if (prefersDarkMode) {
-      document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("lightMode"); // Quita la clase del body
+      document.documentElement.classList.add("dark"); // Añade la clase del html
+      document.documentElement.classList.remove("lightMode"); // Quita la clase del html
     } else {
       document.documentElement.classList.remove("dark");
-      document.documentElement.classList.add("lightMode"); // Añade la clase del body
+      document.documentElement.classList.add("lightMode");
     }
   }, []);
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
 
-    // Cambia las clases en el <html> y <body>
+    // Cambia las clases en el <html>
     if (isDarkMode) {
       document.documentElement.classList.remove("dark");
-      document.documentElement.classList.add("lightMode"); // Añade la clase del body
+      document.documentElement.classList.add("lightMode");
     } else {
       document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("lightMode"); // Quita la clase del body
+      document.documentElement.classList.remove("lightMode");
     }
   };
   return (

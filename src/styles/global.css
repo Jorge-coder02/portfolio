@@ -31,12 +31,13 @@ body {
     #fef7f1 40%,
     rgb(251, 247, 247) 60%
   );
+  color: #000000;
 }
 
 /* Dark Mode */
 .dark {
-  color: #ffffff;
   background: linear-gradient(to bottom, #2f2f2f, #222222 40%, #1a1a1a 100%);
+  color: #ffffff;
 }
 .dark h2 {
   color: #8650f3; /* Títulos */
