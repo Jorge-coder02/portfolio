@@ -131,7 +131,7 @@ function Proyecto({
       {/*  Imagen  */}
       <div className="flex flex-1">
         <img
-          className="object-cover rounded-lg shadow-xl w-full h-64"
+          className="object-cover rounded-lg shadow-xl w-full sm:h-64"
           src={img}
           alt="imagen proyecto"
         />
@@ -155,7 +155,8 @@ function Proyecto({
             texto="Github"
             svg={
               <svg
-                className="svg_github"
+                fill="currentColor"
+                className="feather feather-external-link"
                 height="24"
                 viewBox="0 0 24 24"
                 width="24"
@@ -178,8 +179,6 @@ function Proyecto({
                 fill="none"
                 height="24"
                 stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
                 strokeWidth="2"
                 viewBox="0 0 24 24"
                 width="24"
