@@ -9,9 +9,12 @@ function IconoTech({ img_src }: Props) {
     "",
   );
   return (
-    <div className="transform transition-transform hover:scale-105 duration relative group">
+    <div
+      className="flex justify-center items-center transform transition-transform 
+    hover:scale-105 duration relative group w-16 h-16"
+    >
       <img
-        className="rounded-btn w-16 h-16"
+        className="rounded-btn w-full h-full object-contain"
         src={img_src}
         alt={"icono"}
         loading="lazy"
