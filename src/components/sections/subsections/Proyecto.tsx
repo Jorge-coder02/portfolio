@@ -133,6 +133,7 @@ function Proyecto({
         <img
           className="object-cover rounded-lg shadow-xl w-full sm:h-64"
           src={img}
+          loading="lazy"
           alt="imagen proyecto"
         />
       </div>
