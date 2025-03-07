@@ -157,6 +157,7 @@ function Proyecto({
         <div className="mt-6 flex gap-x-3">
           {/* Github */}
           <BotonLink
+            label="enlace github"
             texto="Github"
             svg={
               <svg
@@ -177,6 +178,7 @@ function Proyecto({
           ></BotonLink>
           {/* Preview */}
           <BotonLink
+            label="enlace página"
             texto="Probar"
             svg={
               <svg

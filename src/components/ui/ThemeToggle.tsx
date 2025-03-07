@@ -1,6 +1,6 @@
 // src/components/ThemeToggle.tsx
 import { useState, useEffect } from "react";
-import { MoonIcon, SunIcon } from "./Icons";
+import { MoonIcon, SunIcon } from "./ThemeIcons.tsx";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ThemeToggle = () => {

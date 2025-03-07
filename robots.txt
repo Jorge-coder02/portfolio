@@ -1,0 +1,5 @@
+# robots.txt para www.jorgepersonal.netlify.app
+
+User-agent: *
+Disallow: 
+
