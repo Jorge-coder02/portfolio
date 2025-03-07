@@ -39,18 +39,15 @@ body {
   background: linear-gradient(to bottom, #2f2f2f, #222222 40%, #1a1a1a 100%);
   color: #ffffff;
 }
-.dark h2 {
-  color: #8650f3; /* Títulos */
-}
 .dark h1,
 .dark h3,
 .dark span,
 .dark p {
   color: #ffffff;
 }
-
+.dark h2,
 .dark a {
-  color: #8650f3; /* Enlaces */
+  color: #8650f3; /* Títulos */
 }
 
 /* Animación de flotación */

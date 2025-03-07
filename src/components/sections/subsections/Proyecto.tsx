@@ -54,7 +54,7 @@ function getButton(tech: string) {
     case "node":
       return (
         <Boton
-          bg_color="#59b359"
+          bg_color="#0f6709"
           texto="Nodejs"
           svg={
             <svg
