@@ -1,4 +1,3 @@
-import { img } from "framer-motion/client";
 import React, { type ReactNode } from "react";
 
 type Props = { img_src: string };
