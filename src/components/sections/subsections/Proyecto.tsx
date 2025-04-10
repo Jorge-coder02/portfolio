@@ -145,7 +145,7 @@ function Proyecto({
           {titulo}
         </h3>
         {/*  Tecnologías (recorrer) */}
-        <div className="flex gap-x-1 items-center mt-2">
+        <div className="flex flex-wrap gap-x-1 gap-y-2 items-center mt-2">
           {botones_tech.map((tech, index) => (
             <React.Fragment key={index}>{getButton(tech)}</React.Fragment>
           ))}
