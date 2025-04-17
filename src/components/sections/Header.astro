@@ -1,11 +1,12 @@
 ---
 import ThemeToggle from "../ui/ThemeToggle";
+import GitHubLogo from "../../assets/GitHubLogo";
 ---
 
 <header id="header" class="p-5 font-semibold shadow-sm">
   <div class="container mx-auto flex justify-around items-center">
     <nav>
-      <ul class="flex justify-center items-center gap-4 md:gap-8">
+      <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
         <li><a href="#about" class="hover:text-purple-500">Sobre mí</a></li>
         <li>
           <a href="#proyectos" class="hover:text-purple-500">Proyectos</a>
@@ -13,11 +14,15 @@ import ThemeToggle from "../ui/ThemeToggle";
         <li>
           <a href="#tecnologias" class="hover:text-purple-500">Tecnologías</a>
         </li>
-        <li>
+        <li class="flex justify-center items-center gap-x-2">
           <a href="#" class="hover:text-purple-500"
             ><ThemeToggle client:load /></a
           >
+          <div class="w-6 h-6 flex justify-center items-center">
+            <GitHubLogo />
+          </div>
         </li>
+        <li></li>
       </ul>
     </nav>
   </div>
