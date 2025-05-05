@@ -23,6 +23,7 @@
 ```bash
 git clone https://github.com/Jorge-coder02/portfolio.git
 cd portfolio
+```
 
 2. **Instalar dependencias**
  ```bash
@@ -38,7 +39,7 @@ yarn install
   npm run dev
   ```
   ## El servidor estará disponible en:
-  # # http://localhost:3000
+  ## http://localhost:3000
 
 
 ## 🗂️ Estructura del Proyecto
