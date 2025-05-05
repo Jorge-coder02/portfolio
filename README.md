@@ -20,43 +20,49 @@
 ## 📦 Instalación
 
 1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/Jorge-coder02/portfolio.git
-   cd portfolio
+```bash
+git clone https://github.com/Jorge-coder02/portfolio.git
+cd portfolio
 
 2. **Instalar dependencias**
-  ```bash
-   npm install
-  ```
-# o si usas Yarn
-  ```bash
+ ```bash
+ npm install
+```
+o si usas Yarn
+```bash
 yarn install
-  ```
+ ```
 
 3. **Ejecutar en modo desarrollo**
   ```bash
   npm run dev
   ```
-  # El servidor estará disponible en:
-  # http://localhost:3000
+  ## El servidor estará disponible en:
+  # # http://localhost:3000
 
 
-## Estructura del proyecto
-/
-├── public/          # Assets estáticos
-       ├── images/
-       ├── pdf/
-├── src/
-│   ├── assets/  
-│   ├── components/  # Componentes React
-       ├── sections/
-       ├── ui/
-│   ├── layouts/     # Layout de Astro
-│   └── pages/       # Rutas de la aplicación
-│   └── styles/     
-├── astro.config.mjs
-├── tailwind.config.js
-└── README.md
+## 🗂️ Estructura del Proyecto
+
+```
+📦 root
+├── 📁 public               # Assets estáticos
+│   ├── 📁 images           # 🖼️ Imágenes globales 
+│   └── 📁 pdf              # 📄 Documentos PDF
+│
+├── 📁 src
+│   ├── 📁 assets           # 🎨 SVG/Fuentes
+│   ├── 📁 components       # ⚛️ Componentes React
+│   │   ├── 📁 sections     # 🖥️ Secciones completas
+│   │   └── 📁 ui           # 🧩 Componentes UI atómicos
+│   │
+│   ├── 📁 layouts          # 🏗️ Layouts base (Astro)
+│   ├── 📁 pages            # 🌐 Rutas de la app
+│   └── 📁 styles           # 🎨 Estilos globales
+│
+├── ⚙️ astro.config.mjs     # Config Astro
+├── 🎨 tailwind.config.js   # Config Tailwind
+└── 📜 README.md            # Documentación
+```
 
 
 # Versiones
