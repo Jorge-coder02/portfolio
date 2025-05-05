@@ -1,3 +1,8 @@
+---
+import { useState } from "react";
+import Conocimientos2 from "../ui/Conocimientos.tsx";
+---
+
 <section
   id="proyectos"
   class="flex flex-col py-20 md:py-32 w-full mx-auto container lg:max-w-5xl"
@@ -8,5 +13,7 @@
   </h2>
 
   <!-- Acordeón -->
-  <div class=""></div>
+  <div class="">
+    <Conocimientos2 client:load />
+  </div>
 </section>
