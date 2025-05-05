@@ -175,7 +175,7 @@ const Conocimientos = () => {
     ?.subItems?.find((item) => item.name === selectedSubItem);
 
   return (
-    <section className={`py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white`}>
+    <section className={`py-12 px-4 sm:px-6 lg:px-8 lg:bg-gray-900 text-white`}>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Menú lateral */}
         <div className="md:col-span-1 bg-gray-800 rounded-lg p-4">
