@@ -201,7 +201,7 @@ const Conocimientos = () => {
                       <li key={item.name}>
                         <button
                           onClick={() => setSelectedSubItem(item.name)}
-                          className={`w-full text-left p-2 rounded hover:bg-gray-600 transition text-sm ${selectedSubItem === item.name ? "seleccionado2" : ""}`}
+                          className={`w-full text-left p-2 rounded boton-conoc2 transition text-sm ${selectedSubItem === item.name ? "seleccionado2" : ""}`}
                         >
                           {item.name}
                         </button>
