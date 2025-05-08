@@ -33,6 +33,31 @@ body {
   );
   color: #000000;
 }
+.lightMode a {
+  color: #8650f3; /* Títulos */
+}
+.lightMode .conocimientos {
+  background-color: #7a3ef3;
+  /* color: black; */
+}
+.lightMode .conocimientos2 {
+  background-color: #844df0;
+  /* color: black; */
+}
+.lightMode .boton-conoc:hover {
+  background-color: #531dc1;
+  /* color: black; */
+}
+.lightMode .boton-conoc2:hover {
+  background-color: #531dc1;
+  /* color: black; */
+}
+.lightMode .seleccionado {
+  background-color: #5e2ebe;
+}
+.lightMode .seleccionado2 {
+  background-color: #6336bc;
+}
 
 /* Dark Mode */
 .dark {
@@ -48,6 +73,21 @@ body {
 .dark h2,
 .dark a {
   color: #8650f3; /* Títulos */
+}
+.dark .conocimientos {
+  background-color: #111827;
+}
+.dark .conocimientos2 {
+  background-color: #1f2937;
+}
+.dark .boton-conoc:hover {
+  background-color: #374151;
+}
+.dark .seleccionado {
+  background-color: #374151;
+}
+.dark .seleccionado2 {
+  background-color: #4b5563;
 }
 
 /* Animación de flotación */

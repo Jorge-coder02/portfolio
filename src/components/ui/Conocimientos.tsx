@@ -41,7 +41,7 @@ const Conocimientos = () => {
         {
           name: "React Router",
           description:
-            "Dominio en la creación de SPA con navegación cliente. Implementación de rutas protegidas, lazy loading y manejo de parámetros URL.",
+            "Dominio en la creación de SPA con navegación cliente. Implementación de rutas protegidas, lazy loading (Suspense - Fallback) y manejo de parámetros URL.",
           projects: ["Cartelera de cine", "FinTech"],
           level: "Avanzado",
         },
@@ -176,11 +176,11 @@ const Conocimientos = () => {
 
   return (
     <section
-      className={`py-12 px-4 sm:px-6 lg:px-8 lg:bg-gray-900 text-white rounded-xl shadow-lg`}
+      className={`py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white rounded-xl shadow-lg conocimientos`}
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Menú lateral */}
-        <div className="md:col-span-1 bg-gray-800 rounded-lg p-4">
+        <div className="md:col-span-1 bg-gray-800 rounded-lg p-4 conocimientos2">
           <h3 className="text-xl font-semibold mb-4">Tecnologías</h3>
           <ul className="space-y-2">
             {technologies.map((tech) => (
@@ -190,7 +190,7 @@ const Conocimientos = () => {
                     setSelectedTech(tech.name);
                     setSelectedSubItem(null);
                   }}
-                  className={`w-full text-left p-2 rounded hover:bg-gray-700 transition ${selectedTech === tech.name ? "bg-gray-700" : ""}`}
+                  className={`w-full text-left p-2 rounded  boton-conoc transition ${selectedTech === tech.name ? "seleccionado" : ""}`}
                 >
                   {tech.name}
                 </button>
@@ -201,7 +201,7 @@ const Conocimientos = () => {
                       <li key={item.name}>
                         <button
                           onClick={() => setSelectedSubItem(item.name)}
-                          className={`w-full text-left p-2 rounded hover:bg-gray-600 transition text-sm ${selectedSubItem === item.name ? "bg-gray-600" : ""}`}
+                          className={`w-full text-left p-2 rounded hover:bg-gray-600 transition text-sm ${selectedSubItem === item.name ? "seleccionado2" : ""}`}
                         >
                           {item.name}
                         </button>
@@ -215,7 +215,7 @@ const Conocimientos = () => {
         </div>
 
         {/* Área de contenido */}
-        <div className="md:col-span-3 bg-gray-800 rounded-lg p-6">
+        <div className="md:col-span-3 bg-gray-800 rounded-lg p-6 conocimientos2">
           {currentItem ? (
             <div>
               <h3 className="text-2xl font-bold mb-2">{currentItem.name}</h3>
