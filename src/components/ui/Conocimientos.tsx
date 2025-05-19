@@ -21,12 +21,14 @@ const getEnlace = (proyecto: string) => {
       return "https://short-url-frontend-khaki.vercel.app/";
     case "Restaurante con reservas":
       return "https://restauranteesp.netlify.app/";
+    case "Tienda de ropa":
+      return "https://urbanwearx.netlify.app/";
     case "Todos mis proyectos recientes":
       return "#proyectos";
     case "Varios proyectos recientes":
       return "#proyectos";
     default:
-      return "#"; // Retorna un enlace por defecto si no se encuentra el proyecto
+      return "#proyectos"; // Retorna un enlace por defecto si no se encuentra el proyecto
   }
 };
 
@@ -42,7 +44,7 @@ const Conocimientos = () => {
           name: "React Router",
           description:
             "Dominio en la creación de SPA con navegación cliente. Implementación de rutas protegidas, lazy loading (Suspense - Fallback) y manejo de parámetros URL.",
-          projects: ["Cartelera de cine", "FinTech"],
+          projects: ["Cartelera de cine", "FinTech", "Tienda de ropa"],
           level: "Avanzado",
         },
         {
@@ -50,6 +52,20 @@ const Conocimientos = () => {
           description:
             "Uso de useState, useEffect, useReducer y useContext. Creación de hooks personalizados para lógica reutilizable. Aplicado en formularios, manejo de APIs, validación de sesiones...",
           projects: ["Todos mis proyectos recientes"],
+          level: "Intermedio",
+        },
+        {
+          name: "React Redux",
+          description:
+            "Uso de Redux para manejo de estado global. Implementación de stores, acciones, y reducers para gestionar datos complejos de manera predecible y escalable. Uso de hooks como useSelector y useDispatch para integrar el estado global con componentes funcionales.",
+          projects: ["Tienda de ropa"],
+          level: "Intermedio",
+        },
+        {
+          name: "React Redux Toolkit (RTK)",
+          description:
+            "Experiencia en el manejo eficiente del estado global con Redux Toolkit (RTK). Implementación de stores configurados con `configureStore`, creación de slices `createSlice` para reducir boilerplate. \n\n Ventajas clave: inmutabilidad integrada con Immer, simplificación de acciones/reducers, y optimización de rendimiento.",
+          projects: ["Tienda de ropa"],
           level: "Intermedio",
         },
         {

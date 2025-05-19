@@ -87,6 +87,25 @@ function getButton(tech: string) {
           }
         />
       );
+    case "redux":
+      return (
+        <Boton
+          bg_color="rgb(31 31 33)" // #222222 color react cambiado para contraste con darkMode
+          texto="Redux"
+          svg={
+            <svg
+              className="w-5 h-5"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ fill: "#7a4fbe" }}
+            >
+              <title />
+              <path d="M16.633 16.504c.869-.075 1.543-.84 1.499-1.754-.046-.914-.795-1.648-1.708-1.648h-.061c-.943.031-1.678.824-1.648 1.769.03.479.226.869.494 1.153-1.048 2.038-2.621 3.536-5.004 4.795-1.603.838-3.296 1.154-4.944.929-1.378-.194-2.456-.81-3.116-1.798-.988-1.499-1.078-3.116-.255-4.734.601-1.169 1.499-2.023 2.099-2.443-.15-.389-.33-1.048-.42-1.542-4.436 3.177-3.985 7.521-2.637 9.574 1.004 1.498 3.057 2.456 5.304 2.456.599 0 1.229-.044 1.843-.194 3.896-.749 6.847-3.086 8.54-6.532l.014-.031zM21.981 12.758c-2.321-2.727-5.738-4.225-9.634-4.225h-.51c-.253-.554-.837-.899-1.497-.899h-.045c-.943 0-1.678.81-1.647 1.753.03.898.794 1.648 1.708 1.648h.074c.675-.03 1.259-.45 1.498-1.049h.555c2.309 0 4.495.674 6.488 1.992 1.527 1.004 2.622 2.322 3.236 3.896.538 1.288.509 2.547-.045 3.597-.854 1.647-2.293 2.517-4.195 2.517-1.199 0-2.367-.375-2.967-.644-.359.298-.959.793-1.394 1.093 1.318.598 2.652.943 3.94.943 2.922 0 5.093-1.647 5.918-3.236.898-1.798.824-4.824-1.469-7.416l-.014.03zM6.49 17.042c.029.899.793 1.648 1.708 1.648h.06c.959-.03 1.693-.823 1.648-1.768 0-.899-.779-1.647-1.693-1.647h-.061c-.06 0-.149 0-.225.029-1.243-2.098-1.768-4.346-1.572-6.771.119-1.828.719-3.417 1.797-4.735.899-1.124 2.592-1.679 3.746-1.708 3.236-.061 4.585 3.971 4.689 5.574l1.498.449c-.345-4.914-3.4-7.492-6.322-7.492-2.742 0-5.273 1.993-6.293 4.915-1.393 3.896-.479 7.641 1.229 10.638-.149.195-.239.539-.209.868z" />
+            </svg>
+          }
+        />
+      );
     case "tailwind":
       return (
         <Boton
@@ -129,21 +148,25 @@ function Proyecto({
   return (
     <div className="flex flex-col md:flex-row p-4 md:p-0 gap-y-4 gap-x-10 rounded-lg shadow-lg md:shadow-none">
       {/*  Imagen  */}
-      <div className="flex flex-1">
-        <img
-          className="object-cover rounded-lg shadow-xl w-full sm:h-64"
-          src={img}
-          alt="imagen proyecto"
-        />
+      <div className="flex flex-1 cursor-pointer hover:opacity-50 duration-300 ease-in-out">
+        <a href={`${link_preview}`} target="_blank">
+          <img
+            className="object-cover rounded-lg shadow-xl w-full sm:h-64"
+            src={img}
+            alt="imagen proyecto"
+          />
+        </a>
       </div>
       {/* Texto */}
       <div className="flex-1 mt-2 gap-10">
-        <h3
-          className="text-2xl font-semibold mb-3 md:mb-0 dark:text-gray-300"
-          title={titulo}
-        >
-          {titulo}
-        </h3>
+        <a href={`${link_preview}`} target="_blank">
+          <h3
+            className="text-2xl hover:underline font-semibold mb-3 md:mb-0 dark:text-gray-300"
+            title={titulo}
+          >
+            {titulo}
+          </h3>
+        </a>
         {/*  Tecnologías (recorrer) */}
         <div className="flex flex-wrap gap-x-1 gap-y-2 items-center mt-2">
           {botones_tech.map((tech, index) => (

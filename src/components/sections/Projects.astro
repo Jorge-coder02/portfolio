@@ -14,6 +14,23 @@ import Proyecto from "../sections/subsections/Proyecto.tsx";
 
   <!-- Proyectos -->
   <div class="mt-8 flex flex-col gap-16 md:gap-20">
+    <!-- Proyecto 0 -->
+    <Proyecto
+      client:load
+      titulo="UrbanwearX - Tienda de ropa con carrito"
+      botones_tech={[
+        "react",
+        "redux",
+        "node",
+        "express",
+        "mongodb",
+        "tailwind",
+      ]}
+      img="/images/tiendaropa3.png"
+      descripcion={`Tienda de ropa online con productos de API propia, donde los usuarios pueden explorar y agregar al carrito (manejado con Redux Toolkit).`}
+      link_github="https://github.com/Jorge-coder02/tienda-ropa-frontend"
+      link_preview="https://urbanwearx.netlify.app/"
+    />
     <!-- Proyecto 1 -->
     <Proyecto
       client:load

@@ -3,18 +3,25 @@ import ThemeToggle from "../ui/ThemeToggle";
 import GitHubLogo from "../../assets/GitHubLogo";
 ---
 
-<header id="header" class="p-5 font-semibold shadow-sm">
+<header
+  id="header"
+  class="sticky top-0 p-5 font-semibold shadow-sm z-50 bg-white dark:bg-gray-900 transition-all duration-300 ease-in-out"
+>
   <div class="container mx-auto flex justify-around items-center">
     <nav>
       <ul class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
         <li>
-          <a href="#proyectos" class="hover:text-purple-500">Proyectos</a>
+          <a href="#proyectos" class="hover:text-purple-500 hover:underline"
+            >Proyectos</a
+          >
         </li>
         <li>
-          <a href="#tecnologias" class="hover:text-purple-500">Tecnologías</a>
+          <a href="#tecnologias" class="hover:text-purple-500 hover:underline"
+            >Tecnologías</a
+          >
         </li>
         <li>
-          <a href="#conocimientos" class="hover:text-purple-500"
+          <a href="#conocimientos" class="hover:text-purple-500 hover:underline"
             >Conocimientos</a
           >
         </li>
@@ -22,18 +29,19 @@ import GitHubLogo from "../../assets/GitHubLogo";
           <a
             href="/pdf/CV2025_Jorge.pdf"
             target="_blank"
-            class="hover:text-purple-500">Ver CV</a
+            class="hover:text-purple-500 hover:underline">Ver CV</a
           >
         </li>
         <li class="flex justify-center items-center gap-x-2">
-          <a href="#" class="hover:text-purple-500"
-            ><ThemeToggle client:load /></a
+          <a
+            onclick="(e) => e.preventDefault(); return false;"
+            href="#"
+            class="hover:text-purple-500"><ThemeToggle client:load /></a
           >
           <div class="w-6 h-6 flex justify-center items-center">
             <GitHubLogo />
           </div>
         </li>
-        <li></li>
       </ul>
     </nav>
   </div>
