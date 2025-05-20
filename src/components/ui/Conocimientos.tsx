@@ -206,7 +206,7 @@ const Conocimientos = () => {
                     setSelectedTech(tech.name);
                     setSelectedSubItem(null);
                   }}
-                  className={`w-full text-left p-2 rounded  boton-conoc transition ${selectedTech === tech.name ? "seleccionado" : ""}`}
+                  className={`w-full text-left p-2 rounded boton-conoc transition ${selectedTech === tech.name ? "seleccionado" : ""}`}
                 >
                   {tech.name}
                 </button>
@@ -217,7 +217,7 @@ const Conocimientos = () => {
                       <li key={item.name}>
                         <button
                           onClick={() => setSelectedSubItem(item.name)}
-                          className={`w-full text-left p-2 rounded boton-conoc2 transition text-sm ${selectedSubItem === item.name ? "seleccionado2" : ""}`}
+                          className={`hover: hover:bg-opacity-70 w-full text-left p-2 rounded boton-conoc2 transition text-sm ${selectedSubItem === item.name ? "seleccionado2" : ""}`}
                         >
                           {item.name}
                         </button>
