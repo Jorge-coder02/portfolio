@@ -64,7 +64,7 @@ const Conocimientos = () => {
         {
           name: "React Redux Toolkit (RTK)",
           description:
-            "Experiencia en el manejo eficiente del estado global con Redux Toolkit (RTK). Implementación de stores configurados con `configureStore`, creación de slices `createSlice` para reducir boilerplate. \n\n Ventajas clave: inmutabilidad integrada con Immer, simplificación de acciones/reducers, y optimización de rendimiento.",
+            "Experiencia en el manejo eficiente del estado global con Redux Toolkit (RTK). Implementación de stores configurados con `configureStore`, creación de slices `createSlice` para reducir boilerplate. \n\n Ventajas clave: inmutabilidad integrada con Immer, simplificación de acciones/reducers, y optimización de rendimiento. \n\n Uso de Thunks para manejar lógica asíncrona y efectos secundarios, facilitando la gestión de datos en aplicaciones.",
           projects: ["Tienda de ropa"],
           level: "Intermedio",
         },
